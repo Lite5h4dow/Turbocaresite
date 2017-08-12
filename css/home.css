@@ -24,7 +24,10 @@
   padding-top: 2vh;
   max-height: 20vh;
 }
+.About-Us p{
 
+  font-size: calc(12px + 0.3vw)
+}
 #logo{
   padding-left: 20%;
   padding-right: 20%
