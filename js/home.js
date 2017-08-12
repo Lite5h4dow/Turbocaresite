@@ -36,6 +36,9 @@ $(document).ready(function(){
   $('#HATWbutton').click(function(){
     $('#HATW').modal('show');
   });
+  $('#VNTAirButton').click(function(){
+    $('#VNTAir').modal('show');
+  });
   $('#VNTTurboButton').click(function(){
     $('#VNTTurbo').modal('show');
   });
