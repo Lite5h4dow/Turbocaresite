@@ -1,0 +1,57 @@
+.spacer{
+  padding-top: 2vh;
+}
+.header-nav{
+  padding-top: 2vh;
+  opacity: 80%;
+}
+.lab.parent{
+  position: relative;
+}
+.lab.parallax{
+  position: relative;
+	min-height: 400px;
+	background: transparent;
+}
+.lab.content{
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.company.bar{
+  padding-top: 2vh;
+  max-height: 20vh;
+}
+
+#logo{
+  padding-left: 20%;
+  padding-right: 20%
+}
+#warning{
+  color: red;
+}
+#img2{
+  padding-top: 100%;
+}
+#img3{
+  padding-top: 100%;
+}
+.grey:hover{
+  -webkit-filter: grayscale(0%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(0%);
+  -moz-transition: .5s ease-in-out;
+  -o-filter: grayscale(0%);
+  -o-transition: .5s ease-in-out;
+}
+
+.grey{
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(100%);
+  -moz-transition: .5s ease-in-out;
+  -o-filter: grayscale(100%);
+  -o-transition: .5s ease-in-out;
+}
