@@ -10,6 +10,7 @@ $(document).ready(function(){
   });
   $('.header-nav').slick({
     dots: true,
+    speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
     asNavFor: '.header',
@@ -19,7 +20,7 @@ $(document).ready(function(){
   });
   $('.company.bar').slick({
     dots: false,
-    slidesToShow: 4,
+    slidesToShow: 7,
     slidesToScroll: 1,
     speed: 300,
     infinate: true,
@@ -30,8 +31,23 @@ $(document).ready(function(){
   $('#Technical').dropdown({
     on: 'hover'
   });
+  $('#Equipment').dropdown({
+    on: 'hover'
+  });
   $('#findUs').click(function(){
     $('#findUsModal').modal('show');
+  });
+  $('#RTButton').click(function(){
+    $('#RT').modal('show');
+  });
+  $('#TCRButton').click(function(){
+    $('#TCR').modal('show');
+  });
+  $('#OFPButton').click(function(){
+    $('#OFP').modal('show');
+  });
+  $('#ELRepairButton').click(function(){
+    $('#ELRepair').modal('show');
   });
   $('#HATWbutton').click(function(){
     $('#HATW').modal('show');

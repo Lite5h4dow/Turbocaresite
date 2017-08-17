@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+  <link rel="shortcut icon" href="images/favicon.png" />
   <!--Java CDN-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -32,22 +32,22 @@
   <!--Page-->
   <div class="ui container">
     <div class="ui secondary pointing computer menu">
-      <a class="item">
+      <a class="item" href="https://www.facebook.com/turbocare24/">
         <i class="large grey facebook icon"></i>
       </a>
-      <a class="item">
+      <a class="item" href="https://www.youtube.com/channel/UCd7OTJASscPVWexp4W2H3sQ">
         <i class="large grey youtube icon"></i>
       </a>
       <div class="right menu">
-        <a class="item">
+        <a class="item" href="mailto:info@turbocare24.co.uk">
           <i class="mail icon"></i>
           info@turbocare24.co.uk
         </a>
-        <a class="item">
+        <a class="item" href="tel:07932301515">
           <i class="call icon"></i>
           079323 01515
         </a>
-        <a class="item">
+        <a class="item" href="tel:01142768871">
           <i class="call icon"></i>
           0114 276 8871
         </a>
@@ -56,48 +56,56 @@
     <img class="ui fluid image" id="logo" src="images/turbocare-banner.gif" alt="http://via.placeholder.com/1920x400"/>
     <div class="ui six column centered very padded stackable grid">
       <div class="row">
-        <div class="ui fluid buttons">
-          <div class="ui yellow center aligned button">
-            <i class="ui home icon"></i>
-            Home
+        <div class="ui basic yellow center aligned button">
+          <i class="ui home icon"></i>
+          Home
+        </div>
+        <div class="ui basic yellow center aligned pointing dropdown button" id="Services">
+          <i class="ui doctor icon"></i>
+          Services
+          <div class="menu">
+            <a class="item"id="RTButton">Remanufactured Turbos</a>
+            <a class="item"id="TCRButton">Turbocharger Repair</a>
+            <a class="item">New Turbochargers</a>
+            <a class="item" id="ELRepairButton">El. Actuator Repair</a>
+            <a class="item">VNT vanes Cleaning</a>
+            <a class="item" id="OFPButton">Oil Feed Pipes</a>
           </div>
-          <div class="ui yellow center aligned pointing dropdown button" id="Services">
-            <i class="ui doctor icon"></i>
-            Services
-            <div class="menu">
-              <a class="item">Turbo Reconditioning</a>
-              <a class="item">Exchanging Turbos</a>
-              <a class="item">New Turbos</a>
-              <a class="item">El. Activator Repair</a>
-              <a class="item">VNT vanes cleaning</a>
-              <a class="item">Oil feed pipes</a>
-            </div>
+        </div>
+        <div class="ui basic yellow center aligned pointing dropdown button" id="Technical">
+          <i class="ui open folder icon"></i>
+          Technical
+          <div class="menu">
+            <a class="item" id="HATWbutton">How a Turbo Works</a>
+            <a class="item" id="VNTTurboButton">VNT Turbochargers</a>
+            <a class="item" id="TDButton">Turbocharger Failure</a>
+            <a class="item" id="MIButton">Mounting Instructions</a>
+            <a class="item" id="OLButton">Oil Leakage</a>
+            <a class="item" id="TCButton">Turbo Cutaway</a>
           </div>
-          <div class="ui yellow center aligned pointing dropdown button" id="Technical">
-            <i class="ui open folder icon"></i>
-            Technical
-            <div class="menu">
-              <a class="item" id="HATWbutton">How a Turbo Works</a>
-              <a class="item" id="VNTAirButton">VNT Air Flow Rig</a>
-              <a class="item" id="VNTTurboButton">VNT Turbochargers</a>
-              <a class="item" id="TDButton">Turbocharger Failure</a>
-              <a class="item" id="MIButton">Mounting Instructions</a>
-              <a class="item" id="OLButton">Oil Leaking</a>
-              <a class="item" id="TCButton">Turbo Cutaway</a>
-            </div>
+        </div>
+        <a class="ui basic black center aligned button">
+          Arange a Repair
+        </a>
+        <div class="ui basic yellow center aligned pointing dropdown button" id="Equipment">
+          <i class="ui configure icon"></i>
+          Equipment
+          <div class="menu">
+            <a class="item" id="VNTAirButton">VNT Air Flow Rig</a>
+            <a class="item" id="VSRRigButton">VSR balancing rig</a>
+            <a class="item">Actuator Tester</a>
+            <a class="item">Rotoblast</a>
+            <a class="item">Rotowash</a>
+            <a class="item">Ultrasonic Bath</a>
           </div>
-          <div class="ui yellow center aligned button">
-            <i class="ui configure icon"></i>
-            Equipment
-          </div>
-          <div class="ui yellow center aligned button">
-            <i class="ui find icon"></i>
-            Identify turbo
-          </div>
-          <div class="ui yellow center aligned button" id="findUs">
-            <i class="ui location arrow icon"></i>
-            Find us
-          </div>
+        </div>
+        <div class="ui basic yellow center aligned button" id="IDYTButon">
+          <i class="ui find icon"></i>
+          Identify turbo
+        </div>
+        <div class="ui basic yellow center aligned button" id="findUs">
+          <i class="ui location arrow icon"></i>
+          Find us
         </div>
       </div>
     </div>
@@ -143,7 +151,7 @@
     </div>
     <div class="ui basic inverted yellow segment">
       <div class="ui huge centered header">
-        About Us
+        Turbocharger Remanufacture in Sheffield
       </div>
       <div class="ui stackable grid ">
         <div class="row">
@@ -303,16 +311,12 @@
         <div class="column">
           <div class="ui list">
             <div class="item">
-              <i class="ui home yellow icon"></i>
-              Turbocare 24 LTD <br /> Unit 19 Hoyland Road  <br /> Sheffield S3 8AB
+              <i class="ui lrft aligned large home yellow icon"></i>
+              Turbocare 24 LTD <br /> Unit 19 Hoyland Ind. Est  <br /> Sheffield S3 8AB
             </div>
             <div class="item">
-              <i class="ui call yellow icon"></i>
+              <i class="ui lrft aligned large call yellow icon"></i>
               +44(0) 7932301515 <br /> +44(0) 1142768871
-            </div>
-            <div class="item">
-              <i class="ui mail yellow icon"></i>
-              info@turbocare24.co.uk
             </div>
           </div>
         </div>
@@ -320,11 +324,213 @@
     </div>
   </div>
   <div class="ui basic centered modal" id="findUsModal">
-    <div class="header">Where We Is</div>
+    <div class="header">How To Find Us</div>
+    <i class="ui close icon"></i>
     <div class="content">
       <center>
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2378.9933201438553!2d-1.486921184159641!3d53.397059379989614!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879788ea4fa7c13%3A0x1435b26cbcfefca8!2s19%2C+82+Hoyland+Rd%2C+Sheffield+S3+8AB!5e0!3m2!1sen!2suk!4v1501595858968" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       </center>
+    </div>
+  </div>
+  <div class="ui modal" id="TCR">
+    <i class="close icon"></i>
+    <div class="ui header">
+      Turbocharger Repair
+    </div>
+    <div class="content">
+      <div class="description">
+        If your turbo failed, Turbocare24 LTD offer a competitive turbocharger repair service, to get you back on the road fast and at lower cost than new or remanufactured turbo.
+        <h3>How it works</h3>
+        Call us on 0114 2768871 to speak to our advisors and provide us with shipping details.
+        We arrange a courier to collect your faulty turbocharger. All you have to do is package your turbo safely into a box with your contact information.
+        As soon as your turbocharger arrives to our workshop, we carry out careful inspection on failed turbo prior to starting a repair, and provide you with quotation.
+        If you are satisfied with quotation, we will start a turbo repair process. Turbocharger will be completely stripped down, inspected and necessary parts will be replaced with brand new parts from British manufacturer ‘’Melett’’. Surfaces will be treated with latest sandblasting and ultra-sonic sound equipment. Core will be balanced with VSR300 turbocharger balancing machine and after final assembly, the whole turbocharger is tested and calibrated on G3 air flow bench rig.
+        Old gaskets, nuts and bolts will be replaced with new.
+        Turbocharger will be dispatched to you within 24 hours after receiving it, with guaranteed next day delivery.
+        <h3>Benefits of using our repair service:</h3>
+        Our repair service is more cost effective than new or remanufactured turbocharger.
+        We identify the exact cause of the turbocharger failure and provide you with useful information how to eliminate any chance of repeated damage.
+        We work with your original turbo, that ensures that you pay only for parts which needs replacing.
+        <h3>Payment:</h3>
+        We accept bank transfers and payments over the phone.
+        <h3>Delivery:</h3>
+        We charge only one way of shipping, the return is our expense.
+        <h3>Warranty:</h3>
+        All repaired turbochargers carry out 12 month unlimited mileage guarantee.
+        Turbocharger must be fitted in accordance with the manufacturers fitting guidelines, and to a healthy, non damaged/worn engine. Fitter must ensure the cause of turbocharger damage is eliminated and fit turbo with new oil feed pipe and use only high-quality engine oil suitable for this particular engine.
+        We provide fitting guidelines and inspection report with every turbocharger we repair.
+        If you have any questions please call us on : 0114 2768871
+      </div>
+    </div>
+  </div>
+  <div class="ui modal" id="OFP">
+    <i class="close icon"></i>
+    <div class="ui header">
+      Oil Feed Pipes
+    </div>
+    <div class="content">
+      <div class="description">
+        Fitting a new oil feed pipe is necessary in order to eliminate any chance of turbocharger failing again.
+        We have over 20 different oil feed pipes available in stock which is provided by our proud supplier Melett.
+        Please take a look at the oil feed pipes available at the moment.
+      </div>
+    </div>
+  </div>
+  <div class="ui modal" id="RT">
+    <i class="close icon"></i>
+    <div class="ui header">
+      Remanufactured Turbo
+    </div>
+    <div class="content">
+      <div class="description">
+        This is the fastest way to get your car back on the road. Our off the shelf remanufactured turbochargers starts from £220 inc. All of our turbochargers remanufactured to the highest standards, using the latest machinery.
+
+        <h3>How it works</h3>
+        Call us on 01142768871 to speak to our advisors.
+        Provide us with your vehicle details (REG, engine code or power) or turbocharger number. Please use our ‘’Identify your turbo’’ article to help you find a correct number of your turbocharger.
+
+        If order is placed before 2pm, we will dispatch remanufactured turbo the same day with guaranteed next day express delivery. (100£ fully refundable surcharge will be added to order.)
+        We will arrange the collection of the old turbocharger when it’s ready and refund you full amount of surcharge (minus the cost of return shipping) after it is carefully inspected.
+        (The old unit must be not dismantled or accidentally or deliberately damaged.)
+        Benefits of using our repair service:
+        Our fully remanufactured turbochargers are more cost effective than brand new turbochargers.
+        We identify the exact cause of the turbocharger failure and provide you with useful information how to eliminate any chance of repeated damage.
+        We provide unlimited 24 month guarantee on all remanufactured turbochargers.
+
+        Our supplier Melett spends great deal of time in improving turbocharger design, so most of the parts fitted are upgraded and more advanced than original parts.
+        <h3>Payment:</h3>
+        We accept bank transfers and payments over the phone.
+
+        <h3>Delivery:</h3>
+
+        We charge only one way of shipping, the return is our expense.
+
+        <h3>Warranty:</h3>
+        All remanufactured turbochargers carry out 24 month unlimited mileage guarantee.
+        Turbocharger must be fitted in accordance with the manufacturers fitting guidelines, and to a healthy non damaged/worn engine. Fitter must ensure the cause of turbocharger damage is eliminated and fit turbo with new oil feed pipe and use only high-quality engine oil suitable for this particular engine.
+        We provide fitting guidelines and inspection report with every turbocharger we repair.
+        If you have any questions please call us on : 0114 2768871
+
+      </div>
+    </div>
+  </div>
+  <div class="ui modal" id="IDYT">
+    <i class="close icon"></i>
+    <div class="ui header">
+      Identify your turbo
+    </div>
+    <div class="content">
+      <div class="description">
+        Garrett turbocharger number consists of 6 digits followed by hyphen (-) and one additional number.
+        The part number is usually located on compressor side of turbocharger and it is dotted on a rectangle plate.
+        For example:  765155-5007 ; 753420-0001 ; 454231-2 <br />
+        Garrett turbocharger number always starts with 4 or 7, and in latest models with 8.
+        In some cases numbers are not visible and requires a good clean.
+        If you are not sure, just give us a call or send us a pictures to info@turbocare24.co.uk and we will be happy to assist.<br />
+        KKK Borg warner turbocharger part numbers are always found on blue or yellow metal plate on the compressor side of the turbocharger. It is usually on the bottom line under Part no.
+
+        Examples of Borg warner turbocharger numbers:<br />
+        5435 970 0014<br />
+        5439 988 0007<br />
+        BV39 - 0107<br />
+        BV40D – 0007<br />
+      </div>
+    </div>
+  </div>
+  <div class="ui modal" id="ELRepair">
+    <i class="close icon"></i>
+    <div class="ui header">
+      Electric Actuator Repair
+    </div>
+    <div class="content">
+      <div class="description">
+        <p>
+          We are able to offer Electronic Turbocharger Actuator testing and reconditioning. Our Turbo Electronic Actuator testing service involves us running your Turbocharger actuator on test rig to ensure the actuator electronic part works efficiently without error and that it can reach its full working parameters. In case of the fault within the actuator we start a repair process.  All units are delicately cleaned internally to ensure all electrical components are free of dirt which can affect the actuators ability to process information. Motor and gears are replaced with brand new parts. All the components are carefully assembled and tested again.
+          The cost of a Recondition to an Turbocharger electronic actuator is £90 and includes vat and return delivery.
+          Just send us your electronic turbocharger actuator well packed and with contact and shipping details, and we will contact you as soon as it is ready for shipping.
+          What is Turbocharger electronic Actuator ?
+          It is so called black box bolted on compressor cover of the turbocharger which is connected with bearing housing via rod.
+          It offers much faster response compared to vacuum turbo actuator, due to precise reading of position of the vanes via sensor. Therefore exhaust gases can be used most efficiently, which improves engine performance and fuel economy.
+        </p>
+        <h3>How to know if turbocharger el. Actuator is faulty ?</h3>
+        <p>
+          The easiest way is to run a diagnostics of the engine via OBD plug. It should come up as overboost, underboost or turbo position sensor error.
+          Fault codes: P132A P132B P139A P1952 P1953 P2263
+          If diagnostic tool is not available, it is possible to check it with engine running.
+          Gently accelerate and take a look if electronic actuator arm is moving while revs are changing. Actuator arm has to move inside on higher revs and return to its original position when revs are lower. If actuator is seized and not moving, most likely it is faulty. It could also be a sign of sticky vanes. Please read our article about vanes sticking.
+        </p>
+        <h3>Most common car models which suffer from faulty electronic turbocharger actuator:</h3>
+        <p>
+          BMW 520d, 320d x3 2.0 Turbo Diesel Electronic Turbo Actuator G-290 - G-206 Hella 762965, 731877 Garrett
+          bmw 530 electronic turbo actuator 742730-0001 G-125
+          ford Mondeo, Focus 1.8 tdci 763647 G-32
+          Ford Mondeo 2.2 tdci 155 G-221
+          bmw 2.0 150 hp 731877 G-206
+          bmw 2.0 150 hp 731877-0002 G-103
+          Mercedes C200 C220 E200 E220 W203 W211
+          ford mondeo 2.0 tdci 130 hp G-149
+          Electronic Turbo Actuator Mercedes C320, E280, E320, 3.0 CDI W203 W211, G-219
+          Ford Mondeo mk3 2.0 2.2 TDCI Garrett Electronic Turbo Actuator Diesel Hella
+          Ford Mondeo 2.0 TDCI 130, 115 HP Electronic Turbo Actuator G-221 G-149 , 6nw 008 412 , 712120, Hella
+        </p>
+        <h3>Most common Electronic turbocharger actuator models:</h3>
+        <p>
+          G-01	G-61	G-203
+          G-001	G-62	G-206
+          G-02	G-64	G-208
+          G-09	G-66	G-211
+          G-013	G-72	G-219
+          G-014	G-74	G-221
+          G-015	G-79	G-222
+          G-13	G-88	G-271
+          G-20	G-92	G-273
+          G-21	G-93	G-276
+          G-23	G-96	G-277
+          G-24	G-103	G-282
+          G-25	G-105	G-285
+          G-27	G-107	G-290
+          G-28	G-107	H-02
+          G-29	G-108	H-03
+          G-31	G-109
+          G-32	G-125
+          G-33	G-131
+          G-34	G-135
+          G-35	G-136
+          G-36	G-138
+          G-40	G-139
+          G-42	G-149
+          G-44	G-167
+          G-45	G-169
+          G-48	G-185
+          G-49	G-186
+          G-50	G-187
+          G-53	G-188
+          G-54	G-199
+          712120 6NW 008 412
+          712120 6NW 009 206
+          712120 6NW 009 420
+          781751 6NW 009 660
+          763797 6NW 009 543
+          752406 6NW 009 206
+          730314 6NW 009 228
+          758353 6NW 009 228
+          761963 6NW 009 483
+
+          Ford Mondeo electronic turbo actuator repair   2.0 TDCI  115 hp  130 hp   g149  g-149  g221  g-221
+          Ford electronic turbo actuator repair                 1.8  2.0  2.2  td  TDCI  TDDI
+          Bmw elecronic turbo actuator repair                  520  530 2.0  3.0  2.0d  3.0d
+          Mercedes electronic turbo actuator repair         c200  c220  e200  e220  e270  e320  s320
+
+          turbo limp mode
+          turn engine off the re start the engine and turbo is working again
+          cutting out when hot
+          whistling noise
+          lights coming on dash
+          engine management light on
+          no boost on turbo
+          over boost on turbo
+        </p>
+      </div>
     </div>
   </div>
   <div class="ui modal" id="HATW">
