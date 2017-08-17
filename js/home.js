@@ -37,6 +37,9 @@ $(document).ready(function(){
   $('#findUs').click(function(){
     $('#findUsModal').modal('show');
   });
+  $('#IDYTButton').click(function(){
+    $('#IDYT').modal('show');
+  });
   $('#RTButton').click(function(){
     $('#RT').modal('show');
   });
