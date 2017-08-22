@@ -34,8 +34,26 @@ $(document).ready(function(){
   $('#Equipment').dropdown({
     on: 'hover'
   });
+  $('#ATButton').click(function(){
+    $('#AT').modal('show')
+  });
+  $('#UBButton').click(function(){
+    $('#UB').modal('show');
+  });
+  $('#RWButton').click(function(){
+    $('#RW').modal('show');
+  });
+  $('#RBButton').click(function(){
+    $('#RB').modal('show');
+  });
   $('#findUs').click(function(){
     $('#findUsModal').modal('show');
+  });
+  $('#VNTVCButton').click(function(){
+    $('#VNTVC').modal('show');
+  });
+  $('#NTCButton').click(function(){
+    $('#NTC').modal('show');
   });
   $('#IDYTButton').click(function(){
     $('#IDYT').modal('show');
