@@ -34,8 +34,11 @@ $(document).ready(function(){
   $('#Equipment').dropdown({
     on: 'hover'
   });
+  $('#VSRBRButton').click(function(){
+    $('#VSRBR').modal('show');
+  });
   $('#ATButton').click(function(){
-    $('#AT').modal('show')
+    $('#AT').modal('show');
   });
   $('#UBButton').click(function(){
     $('#UB').modal('show');
