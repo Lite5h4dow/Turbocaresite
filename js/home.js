@@ -1,8 +1,8 @@
 $(document).ready(function(){
   $('.header').slick({
+    autoplay: true,
     dots: false,
     infinite: true,
-    speed: 500,
     fade: true,
     cssEase: 'linear',
     asNavFor: '.header-nav',
@@ -10,7 +10,6 @@ $(document).ready(function(){
   });
   $('.header-nav').slick({
     dots: true,
-    speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
     asNavFor: '.header',
