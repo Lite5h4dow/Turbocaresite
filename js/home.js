@@ -1,6 +1,7 @@
 $(document).ready(function(){
   $('.header').slick({
     autoplay: true,
+    autoplayspeed: 4000,
     dots: false,
     infinite: true,
     fade: true,
@@ -32,6 +33,9 @@ $(document).ready(function(){
   });
   $('#Equipment').dropdown({
     on: 'hover'
+  });
+  $('#ATRButton').click(function(){
+    $('#ATR').modal('show');
   });
   $('#VSRBRButton').click(function(){
     $('#VSRBR').modal('show');
