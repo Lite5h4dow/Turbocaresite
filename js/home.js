@@ -34,6 +34,7 @@ $(document).ready(function(){
   $('#Equipment').dropdown({
     on: 'hover'
   });
+  $('select.dropdown').dropdown();
   $('#ATRButton').click(function(){
     $('#ATR').modal('show');
   });

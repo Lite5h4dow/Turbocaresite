@@ -8,7 +8,6 @@
   <link rel="shortcut icon" href="images/favicon.png" />
   <!--Java CDN-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
   <!--Semantic UI-->
   <script src="assets/semantic/semantic.min.js"></script>
@@ -322,6 +321,9 @@
           </div>
         </div>
       </div>
+      <div class="ui tiny yellow centered header">
+        Designed By Shadowlabs Softworks for Turbocare24
+      </div>
     </div>
   </div>
   <div class="ui basic centered modal" id="findUsModal">
@@ -333,36 +335,143 @@
       </center>
     </div>
   </div>
-  <div class="ui modal" id="ATR">
+  <div class="ui fullscreen modal" id="ATR">
     <i class="ui close icon"></i>
     <div class="header">
       Arrange a Repair
     </div>
     <div class="content">
-      <div class="description">
-        <p>
-          Arranging your turbocharger to be reconditioned by Turbocare24 was never been easier!<br />
-          Just fill in this online form and we will do the rest. <br />
-          Alternatively, you can give us a ring on 0114 2768871 <br />
-        </p>
-        <h3>1: COMPLETE THE ONLINE FORM</h3>
-        <p>
-          Fill in all the required fields with your details and press ‘’send the repair form’’.
-          After receiving the form, we will contact you to make sure turbocharger is ready to be collected.
-        </p>
-        <h3>2: PACKING AND COLLECTION</h3>
-        <p>
-          Please package turbocharger safely into the box, and add your contact details form.
-          We will order a courier to come and collect it the same day, if form is completed before 1PM.
-        </p>
-        <h3>3: INSPECTION AND REPAIR</h3>
-        <p>
-          Once we receive your turbocharger, we will perform a full inspection of the turbo, and contact you with the results. We will let you know what caused the damage and exact price for the repair. Once everything is agreed, we will start the repair process, which usually takes less than 24 hours. We do stock already reconditioned turbochargers, and in case we have exact same model on the shelf it will be dispatched straight away.
-        </p>
-        <h3>4: PAYMENT AND WARRANTY</h3>
-        <p>
-          After turbocharger is reconditioned we will contact you, so you can make a payment over the phone or bank transfer.
-        </p>
+      <div class="ui stackable grid">
+        <div class="row">
+          <div class="eight wide column">
+            <p>
+              Arranging your turbocharger to be reconditioned by Turbocare24 was never been easier!<br />
+              Just fill in this online form and we will do the rest. <br />
+              Alternatively, you can give us a ring on 0114 2768871 <br />
+            </p>
+            <h3>1: COMPLETE THE ONLINE FORM</h3>
+            <p>
+              Fill in all the required fields with your details and press ‘’send the repair form’’.
+              After receiving the form, we will contact you to make sure turbocharger is ready to be collected.
+            </p>
+            <h3>2: PACKING AND COLLECTION</h3>
+            <p>
+              Please package turbocharger safely into the box, and add your contact details form.
+              We will order a courier to come and collect it the same day, if form is completed before 1PM.
+            </p>
+            <h3>3: INSPECTION AND REPAIR</h3>
+            <p>
+              Once we receive your turbocharger, we will perform a full inspection of the turbo, and contact you with the results. We will let you know what caused the damage and exact price for the repair. Once everything is agreed, we will start the repair process, which usually takes less than 24 hours. We do stock already reconditioned turbochargers, and in case we have exact same model on the shelf it will be dispatched straight away.
+            </p>
+            <h3>4: PAYMENT AND WARRANTY</h3>
+            <p>
+              After turbocharger is reconditioned we will contact you, so you can make a payment over the phone or bank transfer.
+            </p>
+          </div>
+          <div class="eight wide column">
+            <div class="ui small form">
+              <div class="required field">
+                <label>Name</label>
+                <div class="two fields">
+                  <div class="field">
+                    <input name="firstName" placeholder="First Name"/>
+                  </div>
+                  <div class="field">
+                    <input name="lastName" placeholder="Last Name"/>
+                  </div>
+                </div>
+              </div>
+              <div class="field">
+                <label>Company Name</label>
+                <input name="companyName" />
+              </div>
+              <div class="required field">
+                <label>Contact Number</label>
+                <input name="contactNumber" />
+              </div>
+              <div class="field">
+                <label>Email Address</label>
+                <input name="emailAddress" />
+              </div>
+              <div class="required field">
+                <label>Collection Address</label>
+                <input name="addLine1" placeholder="Address Line 1" />
+              </div>
+              <div class="field">
+                <input name="addLine2" placeholder="Address Line 2" />
+              </div>
+              <div class="two fields">
+                <div class="required field">
+                  <label>Postcode</label>
+                  <input name="postcode" placeholder="X00 0XX"/>
+                </div>
+                <div class="required field">
+                  <label>County</label>
+                  <select class="ui search dropdown">
+                    <option value="Bedfordshire">Bedfordshire</option>
+                    <option value="Berkshire">Berkshire</option>
+                    <option value="City of Bristol">City of Bristol</option>
+                    <option value="Buckinghamshire">Buckinghamshire</option>
+                    <option value="Cambridgeshire">Cambridgeshire</option>
+                    <option value="Cheshire">Cheshire</option>
+                    <option value="Cornwall">Cornwall</option>
+                    <option value="Cumbria">Cumbria</option>
+                    <option value="Derbyshire">Derbyshire</option>
+                    <option value="Devon">Devon</option>
+                    <option value="Dorset">Dorset</option>
+                    <option value="Durham">Durham</option>
+                    <option value="East Sussex">East Sussex</option>
+                    <option value="Essex">Essex</option>
+                    <option value="Gloucestershire">Gloucestershire</option>
+                    <option value="Greater London">Greater London</option>
+                    <option value="Greater Manchester">Greater Manchester</option>
+                    <option value="Hampshire">Hampshire</option>
+                    <option value="Herefordshire">Herefordshire</option>
+                    <option value="Hertfordshire">Hertfordshire</option>
+                    <option value="Isle of Wight">Isle of Wight</option>
+                    <option value="Kent">Kent</option>
+                    <option value="Lancashire">Lancashire</option>
+                    <option value="Leicestershire">Leicestershire</option>
+                    <option value="Lincolnshire">Lincolnshire</option>
+                    <option value="City of London">City of London</option>
+                    <option value="Merseyside">Merseyside</option>
+                    <option value="Middlesex">Middlesex</option>
+                    <option value="Norfolk">Norfolk</option>
+                    <option value="Northamptonshire">Northamptonshire</option>
+                    <option value="Northumberland">Northumberland</option>
+                    <option value="North Humberside">North Humberside</option>
+                    <option value="North Yorkshire">North Yorkshire</option>
+                    <option value="Nottinghamshire">Nottinghamshire</option>
+                    <option value="Oxfordshire">Oxfordshire</option>
+                    <option value="Rutland">Rutland</option>
+                    <option value="Shropshire">Shropshire</option>
+                    <option value="Somerset">Somerset</option>
+                    <option value="South Yorkshire">South Yorkshire</option>
+                    <option value="Staffordshire">Staffordshire</option>
+                    <option value="Suffolk">Suffolk</option>
+                    <option value="Surrey">Surrey</option>
+                    <option value="Sussex">Sussex</option>
+                    <option value="Tyne and Wear">Tyne and Wear</option>
+                    <option value="Warwickshire">Warwickshire</option>
+                    <option value="West Midlands">West Midlands</option>
+                    <option value="West Sussex">West Sussex</option>
+                    <option value="West Yorkshire">West Yorkshire</option>
+                    <option value="Wiltshire"></option>
+                    <option value="Worcestershire"></option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="ui fluid animated fade yellow button">
+              <div class="visible content">
+                <i class="ui send outline icon"></i>
+              </div>
+              <div class="hidden content">
+                Send
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   <div>
@@ -373,7 +482,7 @@
     </div>
     <div class="content">
       <img class="ui fluid image" src="images\rotoblast.jpg" />
-      <div class="description">
+      <div class="description">!
         Odlings MCR's Rotoblasts cabinets are ideal for automatically blast cleaning metal parts using steel shot. It ensures all the turbocharger components are rust and corossion free.
       </div>
     </div>
@@ -470,32 +579,34 @@
     <div class="content">
       <div class="description">
         If your turbo failed, Turbocare24 LTD offer a competitive turbocharger repair service, to get you back on the road fast and at lower cost than new or remanufactured turbo.
+       <br/>
         <h3>How it works</h3>
-        Call us on 0114 2768871 to speak to our advisors and provide us with shipping details.
+        Call us on 0114 2768871 to speak to our advisors and provide us with shipping details.<br/>
         <br />
-        We arrange a courier to collect your faulty turbocharger. All you have to do is package your turbo safely into a box with your contact information.
-        As soon as your turbocharger arrives to our workshop, we carry out careful inspection on failed turbo prior to starting a repair, and provide you with quotation.
-        If you are satisfied with quotation, we will start a turbo repair process. Turbocharger will be completely stripped down, inspected and necessary parts will be replaced with brand new parts from British manufacturer ‘’Melett’’. Surfaces will be treated with latest sandblasting and ultra-sonic sound equipment. Core will be balanced with VSR300 turbocharger balancing machine and after final assembly, the whole turbocharger is tested and calibrated on G3 air flow bench rig.
-        Old gaskets, nuts and bolts will be replaced with new.
-        Turbocharger will be dispatched to you within 24 hours after receiving it, with guaranteed next day delivery.
+        We arrange a courier to collect your faulty turbocharger. All you have to do is package your turbo safely into a box with your contact information.<br/><br/>
+        As soon as your turbocharger arrives to our workshop, we carry out careful inspection on failed turbo prior to starting a repair, and provide you with quotation.<br/><br/>
+        If you are satisfied with quotation, we will start a turbo repair process. Turbocharger will be completely stripped down, inspected and necessary parts will be replaced with brand new parts from British manufacturer ‘’Melett’’. Surfaces will be treated with latest sandblasting and ultra-sonic sound equipment. Core will be balanced with VSR300 turbocharger balancing machine and after final assembly, the whole turbocharger is tested and calibrated on G3 air flow bench rig.<br/><br/>
+        Old gaskets, nuts and bolts will be replaced with new.<br/><br/>
+        Turbocharger will be dispatched to you within 24 hours after receiving it, with guaranteed next day delivery.<br/><br/>
         <h3>Benefits of using our repair service:</h3>
-        Our repair service is more cost effective than new or remanufactured turbocharger.
-        We identify the exact cause of the turbocharger failure and provide you with useful information how to eliminate any chance of repeated damage.
-        We work with your original turbo, that ensures that you pay only for parts which needs replacing.
+        Our repair service is more cost effective than new or remanufactured turbocharger.<br/><br/>
+        We identify the exact cause of the turbocharger failure and provide you with useful information how to eliminate any chance of repeated damage.<br/><br/>
+        We work with your original turbo, that ensures that you pay only for parts which needs replacing.<br/><br/>
         <h3>Payment:</h3>
         We accept bank transfers and payments over the phone.
         <h3>Delivery:</h3>
         We charge only one way of shipping, the return is our expense.
         <h3>Warranty:</h3>
-        All repaired turbochargers carry out 12 month unlimited mileage guarantee.
-        Turbocharger must be fitted in accordance with the manufacturers fitting guidelines, and to a healthy, non damaged/worn engine. Fitter must ensure the cause of turbocharger damage is eliminated and fit turbo with new oil feed pipe and use only high-quality engine oil suitable for this particular engine.
-        We provide fitting guidelines and inspection report with every turbocharger we repair.
+        All repaired turbochargers carry out 12 month unlimited mileage guarantee.<br/>
+        Turbocharger must be fitted in accordance with the manufacturers fitting guidelines, and to a healthy, non damaged/worn engine.<br/> Fitter must ensure the cause of turbocharger damage is eliminated and fit turbo with new oil feed pipe and use only high-quality engine oil suitable for this particular engine.<br/>
+        We provide fitting guidelines and inspection report with every turbocharger we repair.<br/>
         <br />
         If you have any questions please call us on : 0114 2768871
       </div>
     </div>
   </div>
   <div class="ui modal" id="VSRBR">
+    <i class="ui close icon"></i>
     <div class="header">
       VSR Balancing Rig
     </div>
@@ -538,19 +649,22 @@
         This is the fastest way to get your car back on the road. Our off the shelf remanufactured turbochargers starts from £220 inc. All of our turbochargers remanufactured to the highest standards, using the latest machinery.
         <br />
         <h3>How it works</h3>
-        Call us on 01142768871 to speak to our advisors.
+        Call us on 01142768871 to speak to our advisors.<br/>
         <br />
-        Provide us with your vehicle details (REG, engine code or power) or turbocharger number. Please use our ‘’Identify your turbo’’ article to help you find a correct number of your turbocharger.
+        Provide us with your vehicle details (REG, engine code or power) or turbocharger number. Please use our ‘’Identify your turbo’’ article to help you find a correct number of your turbocharger.<br/>
         <br />
-        If order is placed before 2pm, we will dispatch remanufactured turbo the same day with guaranteed next day express delivery. (100£ fully refundable surcharge will be added to order.)
+        If order is placed before 2pm, we will dispatch remanufactured turbo the same day with guaranteed next day express delivery. (100£ fully refundable surcharge will be added to order.) <br/>
+        </br>
         We will arrange the collection of the old turbocharger when it’s ready and refund you full amount of surcharge (minus the cost of return shipping) after it is carefully inspected.
-        (The old unit must be not dismantled or accidentally or deliberately damaged.)
+        (The old unit must be not dismantled or accidentally or deliberately damaged.)<br/>
         <br />
-        Benefits of using our repair service:
+        <h3>Benefits of using our repair service:</h3>
         <br />
-        Our fully remanufactured turbochargers are more cost effective than brand new turbochargers.
-        We identify the exact cause of the turbocharger failure and provide you with useful information how to eliminate any chance of repeated damage.
-        We provide unlimited 24 month guarantee on all remanufactured turbochargers.
+        Our fully remanufactured turbochargers are more cost effective than brand new turbochargers. <br/>
+        <br/>
+        We identify the exact cause of the turbocharger failure and provide you with useful information how to eliminate any chance of repeated damage.<br/>
+        <br/>
+        We provide unlimited 24 month guarantee on all remanufactured turbochargers.<br/>
         <br />
         Our supplier Melett spends great deal of time in improving turbocharger design, so most of the parts fitted are upgraded and more advanced than original parts.
         <h3>Payment:</h3>
@@ -562,8 +676,9 @@
 
         <h3>Warranty:</h3>
         All remanufactured turbochargers carry out 24 month unlimited mileage guarantee.
-        Turbocharger must be fitted in accordance with the manufacturers fitting guidelines, and to a healthy non damaged/worn engine. Fitter must ensure the cause of turbocharger damage is eliminated and fit turbo with new oil feed pipe and use only high-quality engine oil suitable for this particular engine.
-        We provide fitting guidelines and inspection report with every turbocharger we repair.
+        Turbocharger must be fitted in accordance with the manufacturers fitting guidelines, and to a healthy non damaged/worn engine. Fitter must ensure the cause of turbocharger damage is eliminated and fit turbo with new oil feed pipe and use only high-quality engine oil suitable for this particular engine.<br/>
+        We provide fitting guidelines and inspection report with every turbocharger we repair.<br/>
+        <br/>
         If you have any questions please call us on : 0114 2768871
 
       </div>
@@ -621,12 +736,14 @@
     <div class="content">
       <div class="description">
         <p>
-          We are able to offer Electronic Turbocharger Actuator testing and reconditioning. Our Turbo Electronic Actuator testing service involves us running your Turbocharger actuator on test rig to ensure the actuator electronic part works efficiently without error and that it can reach its full working parameters. In case of the fault within the actuator we start a repair process.  All units are delicately cleaned internally to ensure all electrical components are free of dirt which can affect the actuators ability to process information. Motor and gears are replaced with brand new parts. All the components are carefully assembled and tested again.
-          The cost of a Recondition to an Turbocharger electronic actuator is £90 and includes vat and return delivery.
-          Just send us your electronic turbocharger actuator well packed and with contact and shipping details, and we will contact you as soon as it is ready for shipping.
-          What is Turbocharger electronic Actuator ?
-          It is so called black box bolted on compressor cover of the turbocharger which is connected with bearing housing via rod.
-          It offers much faster response compared to vacuum turbo actuator, due to precise reading of position of the vanes via sensor. Therefore exhaust gases can be used most efficiently, which improves engine performance and fuel economy.
+          We are able to offer Electronic Turbocharger Actuator testing and reconditioning. Our Turbo Electronic Actuator testing service involves us running your Turbocharger actuator on test rig to ensure the actuator electronic part works efficiently without error and that it can reach its full working parameters. In case of the fault within the actuator we start a repair process.  All units are delicately cleaned internally to ensure all electrical components are free of dirt which can affect the actuators ability to process information. Motor and gears are replaced with brand new parts. All the components are carefully assembled and tested again.<br/>
+          <span class="highlight">The cost of a Recondition to an Turbocharger electronic actuator is £90 and includes vat and return delivery.</span><br/>
+          Just send us your electronic turbocharger actuator well packed and with contact and shipping details, and we will contact you as soon as it is ready for shipping.<br/>
+        </p>
+          <h3>What is Turbocharger electronic Actuator ?</h3>
+        <p>
+          It is so called black box bolted on compressor cover of the turbocharger which is connected with bearing housing via rod.<br/>
+          It offers much faster response compared to vacuum turbo actuator, due to precise reading of position of the vanes via sensor. Therefore exhaust gases can be used most efficiently, which improves engine performance and fuel economy.<br/>
         </p>
         <h3>How to know if turbocharger el. Actuator is faulty ?</h3>
         <p>
@@ -733,9 +850,10 @@
         <img src="images/airflow.jpg" />
       </div>
       <div class="description">
-        In our workshop we are able to test all our remanufactured turbochargers with G3 Concepts turbo air flow rig.
-        When setting up a new/remanufactured turbo, vane setting positions are set using accurate air flow equipment, which ensures that the ‘minimum vane opening’ position is set to allow a specific mass of air flow through the vanes. If the vanes are too closed, this can cause choking of the engine and over speeding of the turbine. If it is set too large, the turbo will have too much ‘lag’ and not respond as well as it should.
-        After it is tested and set correctly, we print out a test results which are included with balancing report and invoice.
+        <h3>G3 Concepts Min-flow</h3>
+        In our workshop we are able to test all our remanufactured turbochargers with G3 Concepts turbo air flow rig.<br/><br/>
+        When setting up a new/remanufactured turbo, vane setting positions are set using accurate air flow equipment, which ensures that the ‘minimum vane opening’ position is set to allow a specific mass of air flow through the vanes.<br/><br/> If the vanes are too closed, this can cause choking of the engine and over speeding of the turbine. If it is set too large, the turbo will have too much ‘lag’ and not respond as well as it should.<br/><br/>
+        After it is tested and set correctly, we print out a test results which are included with balancing report and invoice.<br/><br/>
       </div>
     </div>
   </div>
