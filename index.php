@@ -369,7 +369,7 @@
             </p>
           </div>
           <div class="eight wide column">
-            <div class="ui small form">
+            <form class="ui small form" method="post" enctype="multipart/form-data">
               <div class="required field">
                 <label>Name</label>
                 <div class="two fields">
@@ -456,25 +456,25 @@
                     <option value="West Midlands">West Midlands</option>
                     <option value="West Sussex">West Sussex</option>
                     <option value="West Yorkshire">West Yorkshire</option>
-                    <option value="Wiltshire"></option>
-                    <option value="Worcestershire"></option>
+                    <option value="Wiltshire">Wiltshire</option>
+                    <option value="Worcestershire">Worcestershire</option>
                   </select>
                 </div>
               </div>
-            </div>
-            <div class="ui fluid animated fade yellow button">
-              <div class="visible content">
-                <i class="ui send outline icon"></i>
+              <div class="ui fluid animated fade yellow submit button" name="submit">
+                <div class="visible content">
+                  <i class="ui send outline icon"></i>
+                </div>
+                <div class="hidden content">
+                  Send
+                </div>
               </div>
-              <div class="hidden content">
-                Send
-              </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
-  <div>
+  </div>
   <div class="ui modal" id="RB">
     <i class="ui close icon"></i>
     <div class="header">
@@ -1255,4 +1255,36 @@
       <img src="images/articles/Cutaway.png" />
     </div>
   </div>
+  <?php
+    if(isset($_POST['submit'])){
+      //imclude PHPAuthoload
+      require_once 'assets/PHPMailer/PHPMailerAutoload.php';
+
+      function sendemail($to, $from, $fromName, $body, $attachment){
+        //create instance
+        $mail = new PHPMailer();
+        $mail->host = "mustangas.serveriai.lt";
+        $mail->SMTPAuth = true;
+        $mail->Username = "repair@turbocare.co.uk";
+        $mail->Password = "tatarunas1337";
+        $mail->SMTPSecure = "ssl";
+        $mail->Port = 465;
+        //Actual Email
+        $mail->setFrom($From, $fromName);
+        $mail->addAddress($to);
+        $mail->Subject = "Contact Form Email" . date(d/m/Y);
+        $mail->Body = $body;
+        $mail->isHTML(false);
+
+        return $mail->send();
+      }
+      $name = $_POST['firstName'] . " " . $_POST['lastName'];
+      $email = $_POST['emailAddress'];
+      if(sendemail('info@turbocare.co.uk', $email, $name, $body))
+        $msg = 'Email Sent!';
+      else {
+        $msg = 'Email Failed!';
+      }
+    }
+  ?>
 </html>
